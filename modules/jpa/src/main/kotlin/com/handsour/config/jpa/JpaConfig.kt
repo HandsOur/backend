@@ -7,6 +7,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement
 
 @Configuration
 @EnableTransactionManagement
-@EntityScan(basePackages = ["com.handsour"])
-@EnableJpaRepositories(basePackages = ["com.handsour.infrastructure"])
+@EntityScan(basePackages = ["com.handsour", "org.springframework.modulith.events.jpa"])
+@EnableJpaRepositories(basePackages = ["com.handsour"])
 class JpaConfig
